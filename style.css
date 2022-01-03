@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Roboto+Condensed&family=Rubik&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap');
 
 /* font-family: 'Rubik', sans-serif; */
 /* font-family: 'B612 Mono', monospace; */
-/* font-family: 'Big Shoulders Display', cursive; */
-/* font-family: 'Baloo Tamma 2', cursive; */
-/* font-family: 'Big Shoulders Text', cursive; */
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +11,11 @@
 /* header section */
 
 header {
+    position: sticky;
+    top: 0;
     background-color: rgb(0, 0, 0);
     width: 100%;
-    /* z-index: 1; */
+    z-index: 1;
     overflow: auto;
 }
 
@@ -71,30 +67,100 @@ header {
 
 
 /* main content */
-section {
-    /* width: 100%; */
+/* section {
+    width: 100%;
     position: relative;
-}
+} */
 
 .home  {
    /* width: 100%; */
    position: relative;
-   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('pizza-img1.jpg');
+   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('pizza-img1.jpg');
    background-position: center;
    background-repeat: no-repeat;
    height: 800px;
    background-size: cover;
    text-align: center;
-   color: rgb(255, 255, 255);
+   color: rgb(255, 217, 0);
+   overflow: auto;
 }
 
-.home h1 {
+.home h1.welcome {
+    padding-top: 120px;
     font-family: 'Rubik', sans-serif;
-    
     font-size: 100px;
 }
-
+.home h1.recipes {
+    font-family: 'Rubik', sans-serif;
+    font-size: 120px;
+}
 .home p {
+     /* top  right  bottom left */
+    margin: 100px 400px 0px 400px;
     font-family: 'B612 Mono', monospace;
     font-size: 30px;
+}
+
+/* pizza section */
+.pizzas {
+    /* background-color: rgba(0, 0, 0, 0.384); */
+    border-top: 30px solid black;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('pizza-bg.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    overflow: auto;
+    text-align: center;
+}
+
+.pizzas img.peperoni {
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 120px 0px 20px 320px;
+}
+.pizzas p span{
+    font-family: 'B612 Mono', monospace; 
+    color:rgb(255, 217, 0);
+    font-size: 40px;
+    font-weight: 900;
+}
+.pizzas p.pizzaName {
+    float: right;
+    color: rgb(255, 217, 0);
+    margin: 300px 550px 20px 0px;
+    font-family: 'B612 Mono', monospace; 
+    font-size: 60px;
+}
+
+.pizzas p.pizzaInfo {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 193, 123);
+    text-align: justify;
+    margin: 550px 400px 120px 400px;
+}
+
+.pizzas p.pizzaCook {
+    text-align: justify;
+    margin: 100px 400px 0px 400px;
+}
+
+.pizzas ul.pizzaIng{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 193, 123);
+    font-size: 30px;
+    text-align: justify;
+    margin: 0px 400px 0px 400px;
+}
+.pizzas ul.pizzaIng li{
+    display: block;
+}
+
+.pizzas p.howToCook {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255, 193, 123);
+    font-size: 30px;
+    text-align: justify;
+    margin: 0px 400px 0px 400px;
 }
