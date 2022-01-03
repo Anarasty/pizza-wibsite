@@ -1,39 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Roboto+Condensed&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap');
 
-
-/* font-family: 'Roboto Condensed', sans-serif; */
-/* font-family: 'Roboto Condensed', sans-serif; */
-
+/* font-family: 'Rubik', sans-serif; */
+/* font-family: 'B612 Mono', monospace; */
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Baloo Tamma 2', cursive; */
+/* font-family: 'Big Shoulders Text', cursive; */
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     z-index: 1;
     overflow: auto;
 }
 
 .logo {
+    padding: 20px 0px 20px 40px;
     float: left;
-    color: azure;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 60px;
+    color: rgb(255, 217, 0);
+    font-family: 'B612 Mono', monospace;
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 900;
 }
 
 .logo span{
-    color: black;
+    font-weight: 900;
+    color: rgb(255, 136, 0);
 }
 
 .navigation {
+    font-family: 'Rubik', sans-serif;
     float: right;
+    /* color: rgb(255, 255, 255); */
 }
 
 .navigation ul, li {
     display: inline-block;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 10px;
 }
+
+.navigation a{
+    padding: 8px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb(255, 217, 0);
+    color: rgb(255, 217, 0);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 900;
+    transition: all 200ms ease;
+}
+
+.navigation a:hover {
+    border-radius: 30px;
+    border-color: rgb(255, 136, 0);
+    background-color: rgb(255, 136, 0);
+    color: rgb(0, 0, 0);
+    padding: 25px 10px 25px 10px;
+}
+
+/* test */
