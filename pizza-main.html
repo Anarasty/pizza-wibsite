@@ -16,7 +16,7 @@
         <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#listPizza">Pizzas</a></li>
+                <li><a href="#menu">Pizzas</a></li>
                 <li><a href="#contactInformation">Social</a></li>
             </ul>
         </nav>
@@ -25,15 +25,27 @@
         <div class="home">
             <h1 class="welcome" id="welcome">Welcome to </h1>
             <h1 class="recipes">Pizza recipes!</h1>
-            <p>On our site you can find recipes for the most popular 
+            <p id="recipes">On our site you can find recipes for the most popular 
                 pizzas in the world! We will tell you in detail about 
                 the origin, the right ingredients and cooking methods of all 
                 the pizzas in our selection.</p>
         </div>
     </section>
     <section>
+        <div class="menu" id="menu">PIZZA MENU</div>
+        <nav class="pizzaMenu">
+            <ul class="pizzaList">
+                <li class="pizzaM"><a href="#pepperoni">....... Pepperoni pizza .......</a></li>
+                <li class="pizzaM"><a href="#four-meat">....... Four meat pizza .......</a></li>
+                <li class="pizzaM"><a href="#diablo">......... Diablo pizza .........</a></li>
+                <li class="pizzaM"><a href="#hawaii"> ......... Hawaii pizza .........</a></li>
+                <li class="pizzaM"><a href="#marinara">........ Marinara pizza ........</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
         <div class="pizzas" id="listPizza">
-            <img class="pizzaImg" src="pepperoni.png" alt="pepperoni">
+            <img class="pizzaImg" src="pepperoni.png" alt="pepperoni" id="pepperoni">
             <p class="pizzaName">Pepperoni pizza</p>
                 <p class="pizzaInfo"><span>About...</span><br>"Pepperoni" ─ a spicy pizza 
                 with the same name as the main ingredient - Italian salami. A lot of 
@@ -75,7 +87,7 @@
             </p>
             <br><br>
             <hr>
-            <img class="pizzaImg" src="4-meat.png" alt="4-meat">
+            <img class="pizzaImg" src="4-meat.png" alt="4-meat" id="four-meat">
             <p class="pizzaName">Four meat pizza</p>
                 <p class="pizzaInfo"><span>About...</span><br>
                 A mouthwatering 4-meat pizza is one of the most popular dishes 
@@ -126,7 +138,7 @@
             </p>
             <br><br>
             <hr>
-            <img class="pizzaImg" src="diablo.png" alt="diablo">
+            <img class="pizzaImg" src="diablo.png" alt="diablo" id="diablo">
             <p class="pizzaName">Diablo pizza</p>
                 <p class="pizzaInfo"><span>About...</span><br>
                     Diablo pizza is one of the old recipes of traditional Italian 
@@ -182,7 +194,7 @@
             </p>
             <br><br>
             <hr>
-            <img class="pizzaImg" src="hawaii.png" alt="hawaii">
+            <img class="pizzaImg" src="hawaii.png" alt="hawaii" id="hawaii">
             <p class="pizzaName">Hawaii pizza</p>
                 <p class="pizzaInfo"><span>About...</span><br>
                     "Hawaiian" pizza is an original dish with a delicate, subtle 
@@ -232,7 +244,7 @@
             </p>
             <br><br>
             <hr>
-            <img class="pizzaImg" src="marinara.png" alt="marinara">
+            <img class="pizzaImg" src="marinara.png" alt="marinara" id="marinara">
             <p class="pizzaName">Marinara pizza</p>
                 <p class="pizzaInfo"><span>About...</span><br>
                     The history of pizza marinara goes back centuries. 
