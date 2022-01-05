@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&family=Roboto+Condensed&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 /* font-family: 'Rubik', sans-serif; */
 /* font-family: 'B612 Mono', monospace; */
+/* font-family: 'Share Tech Mono', monospace; */
+
 * {
     margin: 0;
     padding: 0;
@@ -108,7 +111,7 @@ header {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('pizza-bg.jpg');
     background-position: center;
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: contain;
     overflow: auto;
     text-align: center;
 }
@@ -127,18 +130,19 @@ header {
 }
 .pizzas p.pizzaName {
     float: right;
-    color: rgb(255, 217, 0);
+    color: rgb(255, 136, 0);
     margin: 300px 550px 20px 0px;
     font-family: 'B612 Mono', monospace; 
     font-size: 60px;
 }
 
 .pizzas p.pizzaInfo {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
     font-size: 30px;
-    color: rgb(255, 193, 123);
+    color: rgb(255, 233, 200);
     text-align: justify;
     margin: 550px 400px 120px 400px;
+    font-weight: 500;
 }
 
 .pizzas p.pizzaCook {
@@ -147,22 +151,24 @@ header {
 }
 
 .pizzas ul.pizzaIng{
-    font-family: 'Rubik', sans-serif;
-    color: rgb(255, 193, 123);
+    font-family: 'Share Tech Mono', monospace;
+    color: rgb(255, 233, 200);
     font-size: 30px;
     text-align: justify;
     margin: 0px 400px 0px 400px;
+    font-weight: 700;
 }
 .pizzas ul.pizzaIng li{
     display: block;
 }
 
 .pizzas p.howToCook {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(255, 193, 123);
+    font-family: 'Share Tech Mono', monospace;
+    color: rgb(255, 233, 200);
     font-size: 30px;
     text-align: justify;
     margin: 0px 400px 0px 400px;
+    font-weight: 500;
 }
 
 hr {
@@ -189,6 +195,7 @@ hr {
     font-family: 'Rubik', sans-serif;
     font-size: 20px;
     width: 27%;
+    max-width: 27%;
     color: white;
     line-height: 50px;
 }
